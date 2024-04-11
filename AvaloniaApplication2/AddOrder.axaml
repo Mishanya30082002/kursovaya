@@ -1,0 +1,66 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:AvaloniaApplication2.Models"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.AddOrder"
+        Title="AddOrder">
+    <StackPanel
+        Orientation="Vertical"
+    >
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <TextBlock >Введите имя клиента</TextBlock>
+            <TextBox Name="ftClientName"></TextBox>
+            <TextBlock>Введите фамилию клиента</TextBlock>
+            <TextBox Name="sndClientName"></TextBox>
+            <TextBlock>Введите отчество клиента</TextBlock>
+            <TextBox Name="ltClientName"></TextBox>
+        </StackPanel>
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <TextBlock>Введите Номер клиента</TextBlock>
+            <TextBox Name="ClientPhoneNumber"></TextBox>
+        </StackPanel>
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <TextBlock>Введите модель устройства</TextBlock>
+            <TextBox Name="Model"></TextBox>
+            <TextBlock>Введите imei</TextBlock>
+            <TextBox Name="imei"></TextBox>
+        </StackPanel>
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <TextBlock Text="Мастер"/>
+            <ComboBox 
+                Name="CbMaster"
+                Margin="10,0,0,0">
+                <ComboBox.DataTemplates>
+                    <DataTemplate x:DataType="models:masters">
+                        <TextBlock>
+                            <Run Text="{Binding FirstName}" />
+                            <Run Text=" " />
+                            <Run Text="{Binding SecondName}" />
+                            <Run Text=" " />
+                            <Run Text="{Binding LastName}" />
+                        </TextBlock>
+                    </DataTemplate>
+                </ComboBox.DataTemplates>
+            </ComboBox>
+            <TextBlock>Комментарий</TextBlock>
+            <TextBox Name="comments"></TextBox>
+        </StackPanel>
+        <StackPanel
+            >
+            <Button
+                HorizontalAlignment="Center"
+                Margin="20,0,0,0"
+                Click="Incert">Добавить заказ</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
