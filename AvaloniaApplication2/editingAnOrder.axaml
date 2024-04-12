@@ -2,8 +2,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:AvaloniaApplication2.Models"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication2.editingAnOrder"
-        Title="editingAnOrder">
-    Welcome to Avalonia!
+        Title="Редактировать заказ"
+        x:DataType="models:order">
+    <StackPanel
+        Orientation="Vertical"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Margin="50">
+        
+        <StackPanel
+            >
+            <DataGrid
+                ItemsSource="order">
+                
+            </DataGrid>
+        </StackPanel>
+        <Button 
+            Content="Редактировать"
+            Width="200"
+            Height="40"
+            FontSize="20"
+            FontWeight="Bold"
+            Background="#2196F3"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            Margin="0 20 0 0">
+        </Button>
+    </StackPanel>
 </Window>

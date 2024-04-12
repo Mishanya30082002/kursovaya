@@ -3,12 +3,12 @@
 public class order_spare_part
 {
     private int _id;
-    private int _order;
-    private int _scarePart;
+    private string _order;
+    private string _scarePart;
     private double _costPrice;
     private double _price;
 
-    public order_spare_part(int id, int order, int scarePart, double costPrice, double price)
+    public order_spare_part(int id, string order, string scarePart, double costPrice, double price)
     {
         _id = id;
         _order = order;
@@ -18,8 +18,8 @@ public class order_spare_part
     }
 
     public int Id => _id;
-    public int Order => _order;
-    public int ScarePart => _scarePart;
+    public string Order => _order;
+    public string ScarePart => _scarePart;
     public double CostPrice => _costPrice;
     public double Price => _price;
 }

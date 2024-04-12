@@ -13,6 +13,7 @@ public partial class AddOrder : Window
     private DBHelper db = new DBHelper();
     private List<masters> _masters;
     private List<order> _orders;
+    private List<order_spare_part> _spare;
     public AddOrder()
     {
         InitializeComponent();
