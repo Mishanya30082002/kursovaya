@@ -12,14 +12,42 @@
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
         Margin="50">
-        
-        <StackPanel
-            >
-            <DataGrid
-                ItemsSource="order">
-                
-            </DataGrid>
-        </StackPanel>
+        <ListBox Name="List"
+                 Margin="20">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="models:order">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  
+                            Margin="20" 
+                            Text="{Binding Id}"/>
+                        <TextBlock 
+                            Margin="20"
+                            Text="{Binding ClientFirstName}"/>
+                        <TextBlock 
+                            Margin="20" 
+                            Text="{Binding ClientSecondName}"/>
+                        <TextBlock  
+                            Margin="20" 
+                            Text="{Binding ClientLastName}"/>
+                        <TextBlock 
+                            Margin="20"
+                            Text="{Binding ClientPhoneNumber}"/>
+                        <TextBlock 
+                            Margin="20" 
+                            Text="{Binding Model}"/>
+                        <TextBlock  
+                            Margin="20" 
+                            Text="{Binding Imei}"/>
+                        <TextBlock 
+                            Margin="20"
+                            Text="{Binding Master}"/>
+                        <TextBlock 
+                            Margin="20" 
+                            Text="{Binding Comment}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button 
             Content="Редактировать"
             Width="200"

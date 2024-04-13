@@ -77,17 +77,19 @@
                 Height="30"
                 Margin="20,0,10,0">
                 <ComboBox.DataTemplates>
-                    <DataTemplate x:DataType="models:order_spare_part">
+                    <DataTemplate x:DataType="models:spare_part">
                         <TextBlock>
-                            <Run Text="{Binding ScarePart}" />
+                            <Run Text="{Binding ProductName}" />
                             <Run Text=" " />
                             <Run Text="{Binding CostPrice}" />
-                            <Run Text=" " />
-                            <Run Text="{Binding Price}" />
                         </TextBlock>
                     </DataTemplate>
                 </ComboBox.DataTemplates>
             </ComboBox>
+            <TextBlock FontSize="20" FontWeight="Bold" Margin="20 0 10 0">Себестоимость</TextBlock>
+            <TextBox Name="costPr" Width="70" Height="30"></TextBox>
+            <TextBlock FontSize="20" FontWeight="Bold" Margin="20 0 10 0">Цена</TextBlock>
+            <TextBox Name="Price" Width="70" Height="30"></TextBox>
         </StackPanel>
         <StackPanel
             Orientation="Horizontal"
@@ -99,15 +101,15 @@
                 Height="30"
                 Margin="20,0,10,0">
                 <ComboBox.DataTemplates>
-                    <DataTemplate x:DataType="models:order_service">
+                    <DataTemplate x:DataType="models:service">
                         <TextBlock>
-                            <Run Text="{Binding Service}" />
-                            <Run Text=" " />
-                            <Run Text="{Binding Price}" />
+                            <Run Text="{Binding NameOfTheService}" />
                         </TextBlock>
                     </DataTemplate>
                 </ComboBox.DataTemplates>
             </ComboBox>
+            <TextBlock FontSize="20" FontWeight="Bold" Margin="20 0 10 0">Цена</TextBlock>
+            <TextBox Name="uPrice" Width="70" Height="30"></TextBox>
         </StackPanel>
         <Button 
             Content="Добавить заказ"
