@@ -214,4 +214,15 @@ public partial class AddOrder : Window
         Update();
     }
 
+    private void CheckOrder(object? sender, RoutedEventArgs e)
+    {
+        new editingAnOrder().Show();
+        this.Close();
+    }
+
+    private void Back(object? sender, RoutedEventArgs e)
+    {
+        new MainWindow().Show();
+        this.Close();
+    }
 }

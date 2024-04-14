@@ -1,0 +1,43 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.RedactOrder"
+        Title="RedactOrder">
+        <StackPanel
+        Orientation="Vertical"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Margin="50">
+                <TextBox Name="clientFirstName"
+                        >
+                        
+                </TextBox>
+                <TextBox Name="clientSecondName"
+                >
+                        
+                </TextBox>
+                <TextBox Name="clientLastName"
+                >
+                        
+                </TextBox>
+                <TextBox Name="clientPhoneNumber"
+                        >
+                        
+                </TextBox>
+                <TextBox Name="model"
+                        >
+                        
+                </TextBox>
+                <TextBox Name="imei"
+                        >
+                        
+                </TextBox>
+                <TextBox Name="comment"
+                        >
+                        
+                </TextBox>
+                <Button Name="Save" Click="saveRedact">Сохрвнить изменения</Button>
+        </StackPanel>        
+</Window>

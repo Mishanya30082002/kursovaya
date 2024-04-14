@@ -1,4 +1,7 @@
-﻿namespace AvaloniaApplication2.Models;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
+namespace AvaloniaApplication2.Models;
 
 public class masters
 {
@@ -30,5 +33,6 @@ public class masters
     public string LastName => _lastName;
     public string Login => _login;
     public string Password => _password;
+    
     
 }

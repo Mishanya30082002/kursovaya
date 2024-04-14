@@ -28,3 +28,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/keiti/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/keiti/RiderProjects/AvaloniaApplication2/AvaloniaApplication2/RedactOrder.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

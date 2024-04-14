@@ -1,4 +1,7 @@
-﻿namespace AvaloniaApplication2.Models;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
+namespace AvaloniaApplication2.Models;
 
 public class order
 {
@@ -36,4 +39,5 @@ public class order
     public string Imei => _imei;
     public string Master => _master;
     public string Comment => _comment;
+    
 }

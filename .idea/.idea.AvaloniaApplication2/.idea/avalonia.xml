@@ -5,6 +5,7 @@
       <map>
         <entry key="AvaloniaApplication2/AddOrder.axaml" value="AvaloniaApplication2/AvaloniaApplication2.csproj" />
         <entry key="AvaloniaApplication2/MainWindow.axaml" value="AvaloniaApplication2/AvaloniaApplication2.csproj" />
+        <entry key="AvaloniaApplication2/RedactOrder.axaml" value="AvaloniaApplication2/AvaloniaApplication2.csproj" />
         <entry key="AvaloniaApplication2/editingAnOrder.axaml" value="AvaloniaApplication2/AvaloniaApplication2.csproj" />
         <entry key="AvaloniaApplication2/redactOrder.axaml" value="AvaloniaApplication2/AvaloniaApplication2.csproj" />
       </map>

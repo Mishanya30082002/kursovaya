@@ -12,36 +12,43 @@
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
         Margin="50">
+        <TextBox Name="Search"
+            TextChanged="Search_OnTextChanged">
+            
+        </TextBox>
         <ListBox Name="List"
-                 Margin="20">
+                 Margin="20"
+                 SelectionChanged="List_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate x:DataType="models:order">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock  
+                        <TextBox 
                             Margin="20" 
-                            Text="{Binding Id}"/>
-                        <TextBlock 
+                            Text="{Binding Id}"
+                            IsReadOnly="True"/>
+                        <TextBox
                             Margin="20"
                             Text="{Binding ClientFirstName}"/>
-                        <TextBlock 
+                        <TextBox 
                             Margin="20" 
                             Text="{Binding ClientSecondName}"/>
-                        <TextBlock  
+                        <TextBox  
                             Margin="20" 
                             Text="{Binding ClientLastName}"/>
-                        <TextBlock 
+                        <TextBox 
                             Margin="20"
                             Text="{Binding ClientPhoneNumber}"/>
-                        <TextBlock 
+                        <TextBox 
                             Margin="20" 
                             Text="{Binding Model}"/>
-                        <TextBlock  
+                        <TextBox  
                             Margin="20" 
                             Text="{Binding Imei}"/>
-                        <TextBlock 
-                            Margin="20"
-                            Text="{Binding Master}"/>
-                        <TextBlock 
+                        <TextBox  
+                            Margin="20" 
+                            Text="{Binding Master}"
+                            IsReadOnly="True"/>
+                        <TextBox  
                             Margin="20" 
                             Text="{Binding Comment}"/>
                     </StackPanel>
@@ -57,7 +64,32 @@
             Background="#2196F3"
             Foreground="White"
             HorizontalAlignment="Center"
-            Margin="0 20 0 0">
+            Margin="0 20 0 0"
+            Click="EditOrder">
+        </Button>
+        <Button 
+            Content="Сменить пользователя"
+            Width="200"
+            Height="40"
+            FontSize="20"
+            FontWeight="Bold"
+            Background="#2F4"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            Margin="0 20 0 0"
+            Click="Back">
+        </Button>
+        <Button 
+            Content="Новый заказ"
+            Width="200"
+            Height="40"
+            FontSize="20"
+            FontWeight="Bold"
+            Background="#2F4"
+            Foreground="White"
+            HorizontalAlignment="Center"
+            Margin="0 20 0 0"
+            Click="newOrder">
         </Button>
     </StackPanel>
 </Window>
